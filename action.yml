@@ -8,8 +8,13 @@ inputs:
   path:
     description: 'lcov path'
     required: true
+  min_coverage:
+    description: 'minimum coverage percentage allowed',
+    required: true
+    default: 100
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.path }}
+    - ${{ inputs.min_coverage }}
