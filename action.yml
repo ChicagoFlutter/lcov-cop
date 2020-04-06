@@ -1,0 +1,15 @@
+name: lcov-cop
+author: felangel
+description: 'Enforce LCOV Coverage Thresholds'
+branding:
+  icon: 'code'
+  color: green
+inputs:
+  path:
+    description: 'lcov path'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}
