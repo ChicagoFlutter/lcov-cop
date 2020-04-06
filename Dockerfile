@@ -1,6 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update
+RUN apt-get install -y bc
 RUN apt-get install -y lcov
 
 COPY entrypoint.sh /entrypoint.sh
