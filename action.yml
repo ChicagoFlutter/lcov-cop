@@ -9,7 +9,7 @@ inputs:
     description: 'lcov path'
     required: true
   min_coverage:
-    description: 'minimum coverage percentage allowed',
+    description: 'minimum coverage percentage allowed'
     required: true
     default: 100
 runs:
