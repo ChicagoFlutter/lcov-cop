@@ -23,7 +23,7 @@ A Github Action which helps enforce a minimum code coverage threshold.
 ## Example usage
 
 ```yaml
-uses: ChicagoFlutter/lcov-cop@master
+uses: ChicagoFlutter/lcov-cop@v1.0.0
 with:
   path: "./coverage/lcov.info"
   min_coverage: 95
