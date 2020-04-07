@@ -2,7 +2,7 @@ name: lcov-cop
 author: felangel
 description: 'Enforce LCOV Coverage Thresholds'
 branding:
-  icon: 'code'
+  icon: 'check-circle'
   color: green
 inputs:
   path:
