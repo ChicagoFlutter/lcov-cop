@@ -7,10 +7,11 @@ branding:
 inputs:
   path:
     description: 'lcov path'
-    required: true
+    required: false
+    default: './coverage/lcov.info'
   min_coverage:
     description: 'minimum coverage percentage allowed'
-    required: true
+    required: false
     default: 100
   exclude:
     description: 'paths to exclude from coverage'

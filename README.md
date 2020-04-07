@@ -6,11 +6,13 @@ A Github Action which helps enforce a minimum code coverage threshold.
 
 ### `path`
 
-**Required** The path to the `lcov.info` file.
+**Optional** The path to the `lcov.info` file.
+
+**Default** `./coverage/lcov.info`
 
 ### `min_coverage`
 
-**Required** The minimum coverage percentage allowed.
+**Optional** The minimum coverage percentage allowed.
 
 **Default** 100
 
