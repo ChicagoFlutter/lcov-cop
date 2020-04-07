@@ -14,6 +14,10 @@ A Github Action which helps enforce a minimum code coverage threshold.
 
 **Default** 100
 
+### `exclude`
+
+**Optional** paths to exclude from coverage
+
 ## Example usage
 
 ```yaml
@@ -21,4 +25,5 @@ uses: ChicagoFlutter/lcov-cop@master
 with:
   path: "./coverage/lcov.info"
   min_coverage: 95
+  exclude: "**/*.g.dart **/l10n/*.dart"
 ```
