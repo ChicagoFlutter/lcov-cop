@@ -9,9 +9,9 @@ FILTERED_COVERAGE_PATH='./lcov_filtered.info'
 if [ ! -z "$3" ]; then
     echo "Excluding $3 from coverage..."
     lcov --remove ${LCOV_PATH} $3 -o ${FILTERED_COVERAGE_PATH}
-    CODE_COVERAGE=$(lcov --list ${FILTERED_COVERAGE_PATH} | sed -n "s/.*Total:|\(.*\)%.*/\1/p")
+    CODE_COVERAGE=$(lcov --list ${FILTERED_COVERAGE_PATH} | sed -n "s/.*Total:|\([^%]*\)%.*/\1/p")
 else
-    CODE_COVERAGE=$(lcov --list ${LCOV_PATH} | sed -n "s/.*Total:|\(.*\)%.*/\1/p")
+    CODE_COVERAGE=$(lcov --list ${LCOV_PATH} | sed -n "s/.*Total:|\([^%]*\)%.*/\1/p")
 fi
 
 echo "Minumum Coverage Required: ${MINIMUM_COVERAGE}%"
