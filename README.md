@@ -1,3 +1,11 @@
+<p align="center">
+  ⚠️ ⚠️ ⚠️
+  <br/>
+  <b>This project has been deprecated in favor of <a href="https://github.com/VGVentures/very-good-coverage">Very Good Coverage</a>.</b>
+  <br/>
+  Please migrate to <a href="https://github.com/VGVentures/very-good-coverage">Very Good Coverage</a> for continued support and improvements.
+</p>
+
 # lcov cop
 
 A Github Action which helps enforce a minimum code coverage threshold.
